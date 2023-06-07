@@ -34,7 +34,7 @@ const Details = ({ exerciseDetails }) => {
           display: "flex",
           flexDirection: { xs: "column", md: "row" },
           justifyContent: "space-between",
-          width: "90vw",
+          width: "85vw",
           maxHeight: "max-content",
           minHeight: "fit-content",
           backgroundColor: "#403e3e",
@@ -57,7 +57,7 @@ const Details = ({ exerciseDetails }) => {
             {exerciseDetails.name}
           </Typography>
           <Typography
-            variant="subtitle1"
+            variant="subtitle2"
             sx={{
               lineHeight: { xs: "1.2", md: "unset" },
               marginBlock: { xs: "1rem", md: "0" },

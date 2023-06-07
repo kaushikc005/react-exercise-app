@@ -80,7 +80,7 @@ const Navbar = () => {
                   color: "#fff",
                   fontSize: "1.25rem",
                 }}
-                href="#search"
+                href="/#search"
               >
                 Search Exercises
               </Button>

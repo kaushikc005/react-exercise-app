@@ -97,7 +97,7 @@ const ExerciseCard = ({ exercise }) => {
           </Typography>
         </Stack>
         <Typography
-          variant="h5"
+          variant="subtitle1"
           sx={{
             fontSize: { xs: "1.2rem" },
             width: "100%",

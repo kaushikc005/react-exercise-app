@@ -52,7 +52,7 @@ const HeroSection = ({ darkMode }) => {
           And Repeat
         </Typography>
         <Typography
-          variant="h5"
+          variant="subtitle1"
           sx={{
             marginTop: "2rem",
             fontSize: { xs: "1.5rem", md: "2.5rem" },

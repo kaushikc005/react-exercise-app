@@ -3,7 +3,7 @@ import axios from "axios";
 const BASE_URL = "https://exercisedb.p.rapidapi.com/exercises";
 const options = {
   headers: {
-    "X-RapidAPI-Key": "3d9d3cba2fmshe16ac3a6f626f2dp1b1b41jsn856e383828e1",
+    "X-RapidAPI-Key": import.meta.env.VITE_RAPID_API_KEY_EXERCISEDB,
     "X-RapidAPI-Host": "exercisedb.p.rapidapi.com",
   },
 };

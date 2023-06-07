@@ -29,7 +29,7 @@ const SearchExercise = ({ setBodyPart, setExercises, bodyPart }) => {
       setExercises(filteredExerciseData);
       setSearchText("");
       window.scrollTo({
-        top: 1700,
+        top: 1900,
         left: 100,
         behavior: "smooth",
       });
@@ -59,7 +59,7 @@ const SearchExercise = ({ setBodyPart, setExercises, bodyPart }) => {
             fontSize: { xs: "2rem", md: "4rem" },
             textAlign: "center",
             lineHeight: { xs: "2.5rem", md: "5rem" },
-            marginTop: { xs: "2rem", md: "0" },
+            marginBlock: { xs: "2rem" },
           }}
         >
           Awesome Exercises You <br /> Should Know
