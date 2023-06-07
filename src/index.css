@@ -1,0 +1,51 @@
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  font-family: Josefin Sans, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+a {
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+a:hover {
+  color: #ff2625;
+}
+
+@media (max-width: 530px) {
+  .react-horizontal-scrolling-menu--arrow-left,
+  .react-horizontal-scrolling-menu--arrow-right {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .react-horizontal-scrolling-menu--scroll-container {
+    gap: 0rem;
+  }
+  .react-horizontal-scrolling-menu--wrapper {
+    align-items: center;
+  }
+  .react-horizontal-scrolling-menu--inner-wrapper {
+    width: 100vw;
+  }
+}
