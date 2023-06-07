@@ -22,7 +22,6 @@ const HeroSection = ({ darkMode }) => {
           display: { xs: "flex" },
           flexDirection: "column",
           alignItems: { xs: "center", md: "unset" },
-          position: "relative",
           padding: { md: "4rem 8rem" },
           zIndex: 1,
           position: "inherit",

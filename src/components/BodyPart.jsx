@@ -6,7 +6,7 @@ const BodyPart = ({ data, setBodyPart, bodyPart }) => {
     <Box
       sx={{
         width: { xs: "40vw", md: "18vw" },
-        height: { xs: "25vh", md: "40vh" },
+        height: { xs: "max-content", md: "40vh" },
         backgroundColor: "#fff",
         display: "flex",
         flexDirection: "column",
@@ -26,7 +26,8 @@ const BodyPart = ({ data, setBodyPart, bodyPart }) => {
       }}
     >
       <img src={data.icon} alt="bodypart-icon" className="bodyPartCardIcon" />
-      <Typography variant="h5" sx={{ color: "#000", fontWeight: 600 }}>
+      <Typography variant="h5" sx={{ color: "#000", fontWeight: 600 }}
+      textTransform="capitalize">
         {data.name}
       </Typography>
     </Box>
