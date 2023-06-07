@@ -24,11 +24,7 @@ const ShowExercises = ({ exercises, setExercises, bodyPart }) => {
 
   const handlePageChange = (event, value) => {
     setCurrentPage(value);
-    window.scrollTo({
-      top: 1900,
-      left: 100,
-      behavior: "smooth",
-    });
+  
   };
 
   const indexOfLastExercise = currentPage * exercisesPerPage;

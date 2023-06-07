@@ -67,7 +67,7 @@ const SearchExercise = ({ setBodyPart, setExercises, bodyPart }) => {
 
         <FormControl
           className="searchBar"
-          sx={{ display: "flex", flexDirection: { xs: "column", md: "row" } }}
+          sx={{ display: "flex", flexDirection: { xs: "column", md: "row" },alignItems:{xs:"center",md:"unset"},gap:{xs:"1rem",md:"0"} }}
         >
           <TextField
             type="text"
