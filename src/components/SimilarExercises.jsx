@@ -18,7 +18,6 @@ const SimilarExercises = ({ exerciseDetails }) => {
           `equipment/${exerciseDetails?.equipment} `
         );
         setEquipmentExercise(equipmentData);
-
       }
     };
     handlefetchExercises();
@@ -75,7 +74,7 @@ const SimilarExercises = ({ exerciseDetails }) => {
         </Typography>
       </Typography>
       <Stack id="equipment">
-        {equipmentExercise.length > 0 ? (
+        {equipmentExercise?.length > 0 ? (
           <HorizonalScrollBar data={equipmentExercise} />
         ) : (
           <Loader />

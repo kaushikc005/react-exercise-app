@@ -8,7 +8,7 @@ import { useState } from "react";
 const ShowExercises = ({ exercises, setExercises, bodyPart }) => {
   const exercisesPerPage = 9;
   const [currentPage, setCurrentPage] = useState(1);
-  const totalPages = exercises.length / exercisesPerPage;
+
   useEffect(() => {
     const fetchExerciseData = async () => {
       let exerciseData = [];
@@ -24,17 +24,16 @@ const ShowExercises = ({ exercises, setExercises, bodyPart }) => {
 
   const handlePageChange = (event, value) => {
     setCurrentPage(value);
-  
   };
 
   const indexOfLastExercise = currentPage * exercisesPerPage;
   const indexOfFirstExercise = indexOfLastExercise - exercisesPerPage;
-  const currentPageExercise = exercises.slice(
+  const currentPageExercise = exercises?.slice(
     indexOfFirstExercise,
     indexOfLastExercise
   );
 
-  if (!currentPageExercise.length) return <Loader />;
+  if (!currentPageExercise?.length) return <Loader />;
   return (
     <Box
       id="exercise"
@@ -78,7 +77,7 @@ const ShowExercises = ({ exercises, setExercises, bodyPart }) => {
           onChange={handlePageChange}
           defaultPage={1}
           page={currentPage}
-          count={Math.ceil(exercises.length / exercisesPerPage)}
+          count={Math.ceil(exercises?.length / exercisesPerPage)}
           color="primary"
           shape="rounded"
         />

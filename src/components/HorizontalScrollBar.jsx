@@ -108,7 +108,7 @@ const HorizonalScrollBar = ({ data, bodyParts, setBodyPart, bodyPart }) => {
     );
   };
 
-  if (!data.length) return <Loader />;
+  if (!data?.length) return <Loader />;
   return (
     <Box onMouseEnter={disableScroll} onMouseLeave={enableScroll}>
       <ScrollMenu

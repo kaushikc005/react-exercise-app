@@ -126,10 +126,22 @@ const ExerciseVideo = ({ exerciseDetails }) => {
                   }}
                 />
                 <CardContent sx={{ alignSelf: "flex-start" }}>
-                  <Typography variant="subtitle1" sx={{fontSize:{xs:"1rem",md:"1.25rem"} ,fontWeight: "bold" }}>
-                    {data?.video?.title.slice(0, 50)}
+                  <Typography
+                    variant="subtitle1"
+                    sx={{
+                      fontSize: { xs: "1rem", md: "1.25rem" },
+                      fontWeight: "bold",
+                    }}
+                  >
+                    {data?.video?.title?.slice(0, 50)}
                   </Typography>
-                  <Typography variant="subtitle1" sx={{fontSize:{xs:"0.75rem",md:"1rem"} , fontWeight: "bold" }}>
+                  <Typography
+                    variant="subtitle1"
+                    sx={{
+                      fontSize: { xs: "0.75rem", md: "1rem" },
+                      fontWeight: "bold",
+                    }}
+                  >
                     {data?.video?.channelName}
                   </Typography>
                 </CardContent>

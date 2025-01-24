@@ -9,10 +9,9 @@ const SearchExercise = ({ setBodyPart, setExercises, bodyPart }) => {
   useEffect(() => {
     const fetchData = async () => {
       const data = await fetchfromAPI("bodyPartList");
-      setBodyParts(["all", ...data]);
+      if (data?.length) setBodyParts(["all", ...data]);
     };
     fetchData();
-
   }, []);
 
   const handleSearch = async () => {
@@ -67,7 +66,12 @@ const SearchExercise = ({ setBodyPart, setExercises, bodyPart }) => {
 
         <FormControl
           className="searchBar"
-          sx={{ display: "flex", flexDirection: { xs: "column", md: "row" },alignItems:{xs:"center",md:"unset"},gap:{xs:"1rem",md:"0"} }}
+          sx={{
+            display: "flex",
+            flexDirection: { xs: "column", md: "row" },
+            alignItems: { xs: "center", md: "unset" },
+            gap: { xs: "1rem", md: "0" },
+          }}
         >
           <TextField
             type="text"
